@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <h1>tipo de campos de formulario</h1>
+        <p>exemplos simples de campos que podemos usar no HTML</p>
+    </header>  
+    <main class="container">
+        <form>
+        <h2>preencha seus dados</h2>
+        <label for="nome">nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="digite seu nome" >
+        <label for="email">e-mail</label>
+        <input type="email" id="email" name="email" placeholder="nome@email.com">
+        <label for="senha">senha</label>
+        <input type="password" id="senha" name="senha" placeholder="digite uma senha">
+        <label for="idade">idade</label>
+        <input type="number" name="idade" id="idade" min="1" max="120">
+        <label for="data"> data de nascimento</label>
+        <input type="date" id="data" name="data">
+        <p class="pergunta">qual turno voçe prefere?</p>
+        <div class="opcoes">
+        <label><input type="radio" name="turno" value="manha">manhã</label>
+        <label><input type="radio" name="turno" value="tarde">tarde</label>
+        <label><input type="radio" name="turno" value="noite">noite</label>
+        </div>
+        <label class="marcaco">
+         <input type="checkbox" name="novidades" value="sim">
+         Quero receber novidades
+        </label>
+        <label for="arquivo">escolha um arquivo</label>
+        <input type="file" id="arquivo" name="arquivo">
+         <div class="botoes">
+         <button type="submit">enviar</button>
+         <button type="reset" class="limpar">limpar</button>
+         </div>
+        </form>
+         <section class="dica">
+         <h2>o que observar?</h2>
+         <p>o atributo <strong>type</strong>define o tipo de informacao que o campo recebe.</p>
+         <p>exemplo: <code>&lt,input type="email"&gt</code>criar um campo para o e-mail.</p>
+         </section>
+         </main>
+         <footer class="rodape">formularios</footer>
+</body>
+</html>
